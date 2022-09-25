@@ -21,8 +21,9 @@ CLASS zcl_generate_test_1 IMPLEMENTATION.
 
 *    Prepare first entry for table
     move sy-mandt to wa_itab-mandt.
-*    move 'LH' to wa_itab-carrier_id.
-*    move sy-datum to wa_itab-flight_date.
+    move 'LH' to wa_itab-carrier_id.
+    move '0400' to wa_itab-connection_id.
+    move sy-datum to wa_itab-flight_date.
     move 500 to wa_itab-restricted_seats.
     move 1000 to wa_itab-restricted_seats_b.
     move 1500 to wa_itab-restricted_seats_fc.
